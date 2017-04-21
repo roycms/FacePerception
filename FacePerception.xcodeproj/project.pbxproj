@@ -14,6 +14,8 @@
 		B053AEDE1EA9EC0700F44672 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B053AEDC1EA9EC0700F44672 /* LaunchScreen.storyboard */; };
 		B053AEE91EA9EC0700F44672 /* FacePerceptionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B053AEE81EA9EC0700F44672 /* FacePerceptionTests.swift */; };
 		B053AEF41EA9EC0700F44672 /* FacePerceptionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B053AEF31EA9EC0700F44672 /* FacePerceptionUITests.swift */; };
+		B053AF051EA9EDF400F44672 /* FaceAiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B053AF021EA9EDF400F44672 /* FaceAiManager.swift */; };
+		B053AF081EA9EE3D00F44672 /* FixOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B053AF071EA9EE3D00F44672 /* FixOrientation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		B053AEEF1EA9EC0700F44672 /* FacePerceptionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FacePerceptionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B053AEF31EA9EC0700F44672 /* FacePerceptionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacePerceptionUITests.swift; sourceTree = "<group>"; };
 		B053AEF51EA9EC0700F44672 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B053AF021EA9EDF400F44672 /* FaceAiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceAiManager.swift; sourceTree = "<group>"; };
+		B053AF071EA9EE3D00F44672 /* FixOrientation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FixOrientation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,7 @@
 		B053AEC71EA9EC0700F44672 = {
 			isa = PBXGroup;
 			children = (
+				B053AF011EA9EDF400F44672 /* FacePerceptionClass */,
 				B053AED21EA9EC0700F44672 /* FacePerception */,
 				B053AEE71EA9EC0700F44672 /* FacePerceptionTests */,
 				B053AEF21EA9EC0700F44672 /* FacePerceptionUITests */,
@@ -123,6 +128,15 @@
 				B053AEF51EA9EC0700F44672 /* Info.plist */,
 			);
 			path = FacePerceptionUITests;
+			sourceTree = "<group>";
+		};
+		B053AF011EA9EDF400F44672 /* FacePerceptionClass */ = {
+			isa = PBXGroup;
+			children = (
+				B053AF021EA9EDF400F44672 /* FaceAiManager.swift */,
+				B053AF071EA9EE3D00F44672 /* FixOrientation.swift */,
+			);
+			path = FacePerceptionClass;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,7 +276,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B053AF081EA9EE3D00F44672 /* FixOrientation.swift in Sources */,
 				B053AED61EA9EC0700F44672 /* ViewController.swift in Sources */,
+				B053AF051EA9EDF400F44672 /* FaceAiManager.swift in Sources */,
 				B053AED41EA9EC0700F44672 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -420,7 +436,7 @@
 				DEVELOPMENT_TEAM = 8N7N7WZT8J;
 				INFOPLIST_FILE = FacePerception/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = cn.19860911.FacePerception.FacePerception;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.19860911.FacePerception;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -433,7 +449,7 @@
 				DEVELOPMENT_TEAM = 8N7N7WZT8J;
 				INFOPLIST_FILE = FacePerception/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = cn.19860911.FacePerception.FacePerception;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.19860911.FacePerception;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -516,6 +532,7 @@
 				B053AEFA1EA9EC0700F44672 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B053AEFB1EA9EC0700F44672 /* Build configuration list for PBXNativeTarget "FacePerceptionTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +541,7 @@
 				B053AEFD1EA9EC0700F44672 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B053AEFE1EA9EC0700F44672 /* Build configuration list for PBXNativeTarget "FacePerceptionUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +550,7 @@
 				B053AF001EA9EC0700F44672 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
