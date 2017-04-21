@@ -24,8 +24,8 @@ class FaceAiManager: NSObject {
         if (readData != nil)  {
             
             //处理不同方向的图片
-            let image =  FixOrientation.imageFixOrientation(img: UIImage.init(data: readData! as Data)!)
-            let inputImage = CIImage.init(image: image)
+            let image =  UIImage.init(data: readData! as Data)?.fixOrientation()
+            let inputImage = CIImage.init(image: image!)
             
             // detector init
             let detector = CIDetector(ofType: CIDetectorTypeFace,
@@ -46,7 +46,7 @@ class FaceAiManager: NSObject {
                 
                 for face in faces {
                     let faceViewBounds = face.bounds.applying(transform)
-                    self.clipFaceImage(rect: faceViewBounds, image: image)
+                    self.clipFaceImage(rect: faceViewBounds, image: image!)
                 }
             }
             
